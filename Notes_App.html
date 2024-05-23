@@ -1,0 +1,59 @@
+<!Doctype html>
+<html lang="en-us" dir="ltr">
+		<head>
+			<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>BetterNote</title>
+			<link rel="stylesheet" href="Notes_App.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+			
+		</head>
+	<body>
+		<div class="container">
+				<h1><img src="Images/notes.png" alt="A notes icon.">Notes</h1>
+			<div class="notes-container">
+			</div>
+			<div class="popup-box">
+				<div class="popup">
+				  <div class="content">
+					<header>
+					  <p></p>
+					  <i class="uil uil-times"></i>
+					</header>
+					<form action="#">
+					  <div class="row title">
+						<label>Title</label>
+						<input type="text">
+					  </div>
+					  <div class="row description">
+						<label>Description</label>
+						<textarea></textarea>
+					  </div>
+					  <button></button>
+					</form>
+				  </div>
+				</div>
+			  </div>
+			  <div class="wrapper">
+				<li class="add-box">
+				  <div class="icon"><i class="uil uil-plus"></i></div>
+				  <p>Add new note</p>
+				</li>
+			  </div>
+
+		</div>	
+
+		<h1>Add to Checklist</h1>
+		<div id="items"></div>
+			<template id="itemTemplate">
+				<div class="item">
+					<input type="checkbox" class="item-completed">
+					<input type="text" class="item-description" placeholder="To-Do item...">
+				</div>
+			</template>	
+		<button id="add">Add Item</button>
+
+
+		<script src="script.js"></script>
+	</body>
+</html>
